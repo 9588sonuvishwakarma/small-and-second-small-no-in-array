@@ -1,0 +1,35 @@
+#include<bits/stdc++.h>
+using namespace std;
+int ma =INT_MAX;
+int main(){
+	int a;
+	cin>>a;
+	int n[a];
+	for(int i=0;i<a;i++){
+		cin>>n[i];
+
+	}
+	int lime = INT_MAX;
+	for(int j=0;j<a;j++){
+		if(n[j]<lime){
+			lime = n[j];
+		}
+	}
+	cout<<"smallest number is the give "<<endl;
+	cout<<lime<<endl;
+    for(int l=0;l<a;l++){
+			if(n[l]!=lime){
+
+				if(n[l]<ma){
+					ma =n[l];
+				}
+			}
+
+    }
+
+	cout<<"the second smallest number is the give "<<endl;
+    cout<<ma;
+    
+    
+
+return 0;}
